@@ -1,11 +1,11 @@
 server:
-  servlet:
-    context-path: /api
   port: 8081
 eureka:
   client:
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
-      defaultZone: http://localhost:8089/eureka
+      defaultZone: http://localhost:8089/eureka/
 spring:
-   application:
-    name: Student-Service
+  application:
+    name: StudentService

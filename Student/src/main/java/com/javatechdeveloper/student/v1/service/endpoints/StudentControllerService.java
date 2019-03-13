@@ -21,6 +21,7 @@ public class StudentControllerService {
 
 	@GetMapping
 	public StudentList getStudents(){
+		System.out.println("######################");
 
 		return new StudentList(Arrays.asList(new Student(1, "raj","kumar","7",12,LocalDate.of(16, 9, 23),5),
 				new Student(2, "ram","kumar","8",11,LocalDate.of(16, 7, 23),5)));	
